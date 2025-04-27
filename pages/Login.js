@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import styles from "./styles/HomeStyles.js";
+import styles from "./styles/LoginStyles.js";
 
 export default function Home({ navigation }) {
   return (
