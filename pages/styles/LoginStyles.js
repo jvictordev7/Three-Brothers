@@ -9,11 +9,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff", // Cor de fundo branca
   },
   inputContainer: {
-    flex: 1, // Permite que o contêiner ocupe o espaço disponível
     justifyContent: "center", // Centraliza os inputs verticalmente
     alignItems: "center", // Centraliza os inputs horizontalmente
     width: "100%", // Garante que o contêiner ocupe toda a largura
-  },
+},
   circle: {
     width: 700, // Largura do círculo
     height: 700, // Altura do círculo
@@ -30,13 +29,12 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     resizeMode: "contain",
-    marginBottom: 20,
+    marginBottom: 70,
   },
   title: {
     fontSize: 30,
     fontWeight: "bold",
-    marginBottom: 20,
-    top: 60,
+    marginBottom: 70,
   },
   input: {
     width: "80%",
@@ -47,6 +45,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     marginBottom: 15,
     backgroundColor: "#fff",
+    top: -60, // Ajuste a posição vertical do input
   },
   button: {
     width: "80%",
@@ -56,6 +55,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 20,
     marginTop: 10,
+    top: -60, // Ajuste a posição vertical do botão
   },
   buttonText: {
     color: "#fff",
@@ -63,29 +63,29 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   footer: {
-    flexDirection: "column", // Empilha os elementos verticalmente
-    justifyContent: "center", // Centraliza os elementos verticalmente
-    alignItems: "center", // Centraliza os elementos horizontalmente
+    flexDirection: "row", // Coloca os elementos lado a lado
+    justifyContent: "space-between", // Espaça os elementos igualmente
+    alignItems: "center", // Centraliza os elementos verticalmente
     width: "80%",
-    marginTop: 140,
-  },
-  footerText: {
+    marginTop: -50, // Ajuste o espaçamento abaixo do botão "Entrar"
+},
+footerText: {
     color: "#000",
     fontSize: 14,
     textDecorationLine: "underline",
-    top: -200,
-  },
-  footerCreatedBy: {
-    position: "absolute", // Posiciona o rodapé na parte inferior
-    bottom: 10, // Distância da parte inferior da tela
-    alignItems: "center", // Centraliza o texto horizontalmente
-    width: "100%", // Faz o rodapé ocupar toda a largura
-  },
-  footerCreatedByText: {
-    fontSize: 12, // Tamanho da fonte
-    color: "#000", // Cor do texto
-    textAlign: "center", // Centraliza o texto
-  },
+    marginHorizontal: 20, // Adiciona espaçamento horizontal
+},
+footerCreatedBy: {
+  position: "absolute", // Posiciona o rodapé na parte inferior
+  bottom: 10, // Distância da parte inferior da tela
+  alignItems: "center", // Centraliza o texto horizontalmente
+  width: "100%", // Faz o rodapé ocupar toda a largura
+},
+footerCreatedByText: {
+  fontSize: 12, // Tamanho da fonte
+  color: "#000", // Cor do texto
+  textAlign: "center", // Centraliza o texto
+},
 });
 
 export default styles;
